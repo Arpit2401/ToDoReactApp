@@ -164,18 +164,23 @@ html{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 300px) {
     html{
-        font-size: 25%;
+        font-size: 35%;
+    }
+
+    .main{
+        height: 85vh;
     }
 
     .todo-container{
         width: 90vw;
+        height: 75vh;
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 300px) {
     html{
-        font-size: 40%;
+        font-size: 44%;
     }
 
     .todo-container{
@@ -186,7 +191,7 @@ html{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 400px) {
     html{
-        font-size: 45%;
+        font-size: 47%;
     }
     .todo-container{
         width: 80vw;
@@ -196,21 +201,29 @@ html{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     html{
-        font-size: 50%;
+        font-size: 52%;
     }
+    .main{
+        height: 100vh;
+    }
+
+    .todo-container{
+        height: 90vh;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     html{
-        font-size: 55%;
+        font-size: 57%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     html{
-        font-size: 60%;
+        font-size: 62.5%;
     }
 }
 
