@@ -154,12 +154,10 @@ html{
     margin-right: 0;
     margin-left: 1rem;
     font-weight: bolder;
-    opacity: 75%;
     background-color: rgb(255, 0, 0);
 }
 
 .todo-card button:hover{
-    opacity: 100%;
     cursor: pointer;
 }
 
