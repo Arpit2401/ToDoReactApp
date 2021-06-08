@@ -12,6 +12,11 @@ function App() {
 
   const AddToDo = (event) =>{
     event.preventDefault();
+    if(input==="")
+    {
+      alert("Please Enter ToDo!");
+      return;
+    }
     setItems( (prevItems) =>{return [...prevItems, input]});
     setInput("");
   };
@@ -34,7 +39,7 @@ function App() {
         <div className="todo-card">
             <p>{props.todo} 
             </p>
-            <button onClick={() => props.onDelete(props.id)}><i className="fas fa-times"></i></button>
+            <button onClick={() => props.onDelete(props.id)}>X</button>
         </div>
     );
   };
