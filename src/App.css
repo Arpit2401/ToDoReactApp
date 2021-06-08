@@ -55,8 +55,8 @@ html{
 }
 
 .todo-container h1{
-    font-size: 3.5rem;
-    margin: 0.5rem;
+    font-size: 3rem;
+    margin-right: 0.5rem;
 }
 
 .todo-create{
@@ -127,7 +127,7 @@ html{
   }
 
 .todo-card{
-    margin: 1rem 3rem;
+    margin: 1rem auto;
     padding: 1rem;
     font-size: 2rem;
     text-align: justify;
@@ -145,7 +145,7 @@ html{
 
 .todo-card button{
     height: 100%;
-    width: 4%;
+    width: 8%;
     border-color: transparent;
     color: white;
     font-size: 3rem;
