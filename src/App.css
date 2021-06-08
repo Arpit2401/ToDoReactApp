@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 62.5%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.todo-container{
+    min-width: 28rem;
+    width: 60vw;
+    height: 90vh;
+    margin: 5vh 0;
+    background-color: white;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 0.5rem 2.5rem -0.5rem #12FFF7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-heading{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #12e3ff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 15%;
+    padding: 1rem 0;
+}
+
+.todo-heading img{
+    width: 7rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.todo-container h1{
+    font-size: 3rem;
+}
+
+.todo-create{
+    background-color:white;
+    width:100%;
+    margin: 1rem auto 3rem auto;
+    padding:1rem;
+    border-radius: 2rem 2rem 0 0;
+    height: 10%;
+}
+
+.todo-create form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-create input{
+    border: none;
+    border-bottom: 0.3rem solid #12e3ff;
+    outline: none;
+    font-size: 2.2rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+.todo-create button{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #12e3ff;
+    color: white;
+    font-size: 4.5rem;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+}
+
+.todo-create button:hover{
+    background-color: rgb(0, 253, 0);
+    cursor: pointer;
+}
+
+.todo-list{
+    height: 70%;
+    width: 95%;
+    overflow: auto; 
+}
+
+.todo-list::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.todo-list::-webkit-scrollbar-track {
+    
+    background: lightgray;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .todo-list::-webkit-scrollbar-thumb {
+    background: gray;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .todo-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
+
+.todo-card{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: justify;
+    width: 92%;
+    /* border: .1rem solid black; */
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction:row;
 }
+
+.todo-card p{
+    width: 96%;
+    overflow: auto;
+}
+
+.todo-card button{
+    height: 100%;
+    width: 4%;
+    border-color: transparent;
+    color: white;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    margin-right: 0;
+    margin-left: 1rem;
+    font-weight: bolder;
+    opacity: 80%;
+    background-color: #12e3ff;
+}
+
+.todo-card button:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 300px) {
+    html{
+        font-size: 25%;
+    }
+
+    .todo-container{
+        width: 90vw;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) {
+    html{
+        font-size: 28%;
+    }
+
+    .todo-container{
+        width: 80vw;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 400px) {
+    html{
+        font-size: 35%;
+    }
+    .todo-container{
+        width: 80vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html{
+        font-size: 45%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html{
+        font-size: 62.5%;
+    }
+    .todo-container{
+        width: 60vw;
+    }
+}
+
+
